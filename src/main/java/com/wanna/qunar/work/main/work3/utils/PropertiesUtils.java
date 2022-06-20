@@ -9,9 +9,12 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * 加载Properties的工具类
+ */
 public abstract class PropertiesUtils {
 
-    private static final ResourceParser parser = new DefaultResourceParser();
+    private static final ResourceParser parser = ResourceParser.DEFAULT;
 
     /**
      * 加载配置文件，并以有序的Map(LinkedHashMap)的方式返回

@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
  *
  * @see com.wanna.qunar.work.main.work5.codec.Codec
  * @see com.wanna.qunar.work.main.work5.codec.DefaultCodec
+ * @author wanna
  */
 public class TransferPackage {
 

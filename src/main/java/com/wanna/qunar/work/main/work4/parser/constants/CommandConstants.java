@@ -1,5 +1,11 @@
 package com.wanna.qunar.work.main.work4.parser.constants;
 
+
+/**
+ * shell命令常量
+ *
+ * @author wanna
+ */
 public class CommandConstants {
     public static final String CAT_COMMAND = "cat";
 

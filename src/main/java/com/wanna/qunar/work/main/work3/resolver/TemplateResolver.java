@@ -7,6 +7,9 @@ import java.util.Map;
  */
 public interface TemplateResolver {
 
+    // 默认的模板解析器的单例对象
+    TemplateResolver DEFAULT = new DefaultTemplateResolver();
+
     boolean supports(String template);
 
     String resolve(String template, Map<String, String> properties);

@@ -11,6 +11,11 @@ import java.nio.channels.spi.AbstractSelectableChannel;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * EventLoop
+ *
+ * @author wanna
+ */
 public abstract class EventLoop {
     protected AbstractSelectableChannel channel;
     protected Selector selector;

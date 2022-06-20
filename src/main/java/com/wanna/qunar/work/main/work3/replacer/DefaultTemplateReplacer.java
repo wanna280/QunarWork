@@ -3,7 +3,7 @@ package com.wanna.qunar.work.main.work3.replacer;
 import com.google.common.collect.Lists;
 import com.wanna.qunar.work.core.util.AssertUtils;
 import com.wanna.qunar.work.main.work3.resolver.AbstractTemplateResolver;
-import com.wanna.qunar.work.main.work3.resolver.DefaultTemplateResolver;
+import com.wanna.qunar.work.main.work3.resolver.TemplateResolver;
 
 import java.util.List;
 import java.util.Map;
@@ -15,9 +15,9 @@ import java.util.Map;
  */
 public class DefaultTemplateReplacer implements TemplateReplacer {
 
-    private DefaultTemplateResolver resolver = new DefaultTemplateResolver();
+    private TemplateResolver resolver = TemplateResolver.DEFAULT;
 
-    public void setResolver(DefaultTemplateResolver resolver) {
+    public void setResolver(TemplateResolver resolver) {
         this.resolver = resolver;
     }
 

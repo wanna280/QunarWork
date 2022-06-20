@@ -9,6 +9,8 @@ import java.util.Map;
 
 /**
  * indexOrder的模板解析器，会按照前面的数字去进行排序，再根据index去进行获取到对应位置的内容，我们需要向父类提供的是排好序的Properties
+ *
+ * @author wanna
  */
 public class IndexOrderTemplateResolver extends AbstractTemplateResolver {
 

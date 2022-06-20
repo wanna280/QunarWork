@@ -1,13 +1,22 @@
 package com.wanna.qunar.work.main.work1;
 
-import com.google.common.collect.*;
-import com.wanna.qunar.work.core.io.DefaultResourceParser;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.LinkedHashMultimap;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Multimap;
+import com.wanna.qunar.work.core.io.ResourceParser;
 import com.wanna.qunar.work.core.util.AssertUtils;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ *
+ * @author wanna
+ */
 public class AccessLogMain {
     public static final String ACCESS_LOG_PATH = "classpath:access.log";
 
@@ -26,7 +35,7 @@ public class AccessLogMain {
     public static void main(String[] args) {
         String[] lines;
         try {
-            lines = new DefaultResourceParser().parseAsStringLines(ACCESS_LOG_PATH);
+            lines = ResourceParser.DEFAULT.parseAsStringLines(ACCESS_LOG_PATH);
             // 1.打印访问数量
             printAccessCount(lines);
 

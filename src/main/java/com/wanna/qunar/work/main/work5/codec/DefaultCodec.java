@@ -8,6 +8,8 @@ import java.nio.ByteBuffer;
  * 默认的编解码器的实现
  *
  * @see Codec
+ *
+ * @author wanna
  */
 public class DefaultCodec implements Codec {
     @Override

@@ -12,6 +12,7 @@ import java.nio.channels.SocketChannel;
  * 处理Socket读事件的EventHandler，在客户端发送数据过来时，应该将数据去进行接收，并去进行处理
  *
  * @see  SocketChannelReadEvent
+ * @author wanna
  */
 public class SocketChannelReadEventHandler implements EventHandler {
     public static final int DEFAULT_BYTE_BUFFER_SIZE = 1024;

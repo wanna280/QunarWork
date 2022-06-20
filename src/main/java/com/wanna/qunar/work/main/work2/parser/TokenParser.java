@@ -2,6 +2,8 @@ package com.wanna.qunar.work.main.work2.parser;
 
 /**
  * Token解析器
+ *
+ * @author wanna
  */
 public interface TokenParser {
     int NO_MATCH = -1;  // 不支持匹配当前代码的常量标识符

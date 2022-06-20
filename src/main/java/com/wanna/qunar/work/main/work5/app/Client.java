@@ -16,6 +16,12 @@ import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
+
+/**
+ * Client
+ *
+ * @author wanna
+ */
 public class Client {
 
     public static void main(String[] args) throws Exception {

@@ -6,6 +6,8 @@ import java.util.Map;
 
 /**
  * charOrder的模板解析器，对所有的Properties去按照字符去进行排序即可
+ *
+ * @author wanna
  */
 public class CharOrderTemplateResolver extends AbstractTemplateResolver {
 

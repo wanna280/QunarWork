@@ -11,6 +11,10 @@ import java.util.Arrays;
  * @see FilePathResourceParser
  */
 public interface ResourceParser {
+
+    // 默认的ResourceParser的单例对象
+    ResourceParser DEFAULT = new DefaultResourceParser();
+
     boolean support(String path);
 
     String parseAsString(String path) throws IOException;

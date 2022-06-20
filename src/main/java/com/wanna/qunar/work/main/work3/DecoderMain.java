@@ -1,14 +1,17 @@
 package com.wanna.qunar.work.main.work3;
 
-import com.wanna.qunar.work.core.io.DefaultResourceParser;
+import com.wanna.qunar.work.core.io.ResourceParser;
 import com.wanna.qunar.work.core.util.FileUtils;
-import com.wanna.qunar.work.main.work3.replacer.DefaultTemplateReplacer;
 import com.wanna.qunar.work.main.work3.replacer.TemplateReplacer;
 import com.wanna.qunar.work.main.work3.utils.PropertiesUtils;
 
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ *
+ * @author wanna
+ */
 public class DecoderMain {
 
     public static final String TEMPLATE_FILE_LOCATION = "classpath:sdxl_template.txt";
@@ -23,10 +26,10 @@ public class DecoderMain {
         final Map<String, String> properties = PropertiesUtils.loadAsOrderedMap(PROPERTY_FILE_LOCATION);
 
         // 加载template文件
-        final String[] templateLines = new DefaultResourceParser().parseAsStringLines(TEMPLATE_FILE_LOCATION);
+        final String[] templateLines = ResourceParser.DEFAULT.parseAsStringLines(TEMPLATE_FILE_LOCATION);
 
         // 交给TemplateReplacer去进行占位符的解析
-        final TemplateReplacer replacer = new DefaultTemplateReplacer();
+        final TemplateReplacer replacer = TemplateReplacer.DEFAULT;
         final String[] resultLines = replacer.replace(templateLines, properties);
 
         // 将结果写出到本地文件当中

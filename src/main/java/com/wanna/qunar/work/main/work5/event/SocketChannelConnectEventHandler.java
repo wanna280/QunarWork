@@ -8,6 +8,7 @@ import java.nio.channels.SocketChannel;
  * 接收连接完成的事件，在注册完成之后，负责将该SocketChannel注册到Selector当中
  *
  * @see  SocketChannelConnectEvent
+ * @author wanna
  */
 public class SocketChannelConnectEventHandler implements EventHandler {
 

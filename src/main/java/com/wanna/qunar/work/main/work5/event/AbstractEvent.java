@@ -4,6 +4,12 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.util.EventObject;
 
+
+/**
+ * 抽象的event实现
+ *
+ * @author wanna
+ */
 public abstract class AbstractEvent extends EventObject {
 
     private final Selector selector;

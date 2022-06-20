@@ -5,7 +5,9 @@ import com.wanna.qunar.work.core.util.FileUtils;
 import java.io.IOException;
 
 /**
- * 文件路径的资源解析器
+ * 文件路径的资源解析器，负责解析"file:"开头的资源
+ *
+ * @author wanna
  */
 public class FilePathResourceParser implements ResourceParser {
 

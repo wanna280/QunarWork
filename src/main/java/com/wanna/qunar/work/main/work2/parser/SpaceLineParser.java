@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * 空白行的解析器
+ *
+ * @author wanna
  */
 public class SpaceLineParser implements TokenParser {
     private int count = 0;

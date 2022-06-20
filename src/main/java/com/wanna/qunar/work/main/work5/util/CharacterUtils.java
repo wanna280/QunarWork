@@ -1,5 +1,10 @@
 package com.wanna.qunar.work.main.work5.util;
 
+/**
+ * 字符工具类
+ *
+ * @author wanna
+ */
 public class CharacterUtils {
     public static boolean isNumber(char ch) {
         return ch >= '0' && ch <= '9';

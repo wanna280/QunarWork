@@ -16,6 +16,11 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * Server
+ *
+ * @author wanna
+ */
 public class Server {
 
     public static final int SERVER_PORT = 9789;

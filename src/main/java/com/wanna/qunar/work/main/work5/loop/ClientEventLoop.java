@@ -6,6 +6,11 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 
+/**
+ * 客户端的EventLoop
+ *
+ * @author wanna
+ */
 public class ClientEventLoop extends EventLoop {
     public ClientEventLoop(int serverPort) {
         try {

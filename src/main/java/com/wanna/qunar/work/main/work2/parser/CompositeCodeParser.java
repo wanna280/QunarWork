@@ -12,6 +12,8 @@ import java.util.stream.Collectors;
  * @see MultiLineExplainParser
  * @see SingleLineExplainParser
  * @see SpaceLineParser
+ *
+ * @author wanna
  */
 public class CompositeCodeParser implements TokenParser {
     private final List<TokenParser> tokenParsers = Lists.newArrayListWithCapacity(3);

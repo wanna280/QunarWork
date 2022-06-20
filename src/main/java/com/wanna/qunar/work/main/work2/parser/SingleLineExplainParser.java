@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * 单行注释的解析器
+ *
+ * @author wanna
  */
 public class SingleLineExplainParser implements TokenParser {
 

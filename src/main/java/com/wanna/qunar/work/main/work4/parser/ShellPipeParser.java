@@ -2,8 +2,11 @@ package com.wanna.qunar.work.main.work4.parser;
 
 /**
  * Shell管道的解析器
+ *
+ * @author wanna
  */
 public interface ShellPipeParser {
+
     /**
      * 是否支持处理这样的管道？
      *

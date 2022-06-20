@@ -8,6 +8,8 @@ import java.nio.ByteBuffer;
  * 编解码器，负责将TCP的协议包去进行编码/解码
  *
  * @see DefaultCodec
+ *
+ * @author wanna
  */
 public interface Codec {
 

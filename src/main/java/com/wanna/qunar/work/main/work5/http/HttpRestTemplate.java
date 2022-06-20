@@ -7,6 +7,11 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
+/**
+ * Simple RestTemplate for Http
+ *
+ * @author wanna
+ */
 public class HttpRestTemplate {
 
     public static final String GET_METHOD = "GET";
@@ -40,10 +45,5 @@ public class HttpRestTemplate {
             }
         }
         return null;
-    }
-
-    public static void main(String[] args) throws IOException {
-        final String result = new HttpRestTemplate().doGet("https://www.baidu.com");
-
     }
 }

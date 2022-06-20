@@ -8,6 +8,8 @@ import java.util.Map;
 
 /**
  * 默认的TemplateResolver，负责去组合多个TemplateResolver去进行解析
+ *
+ * @author wanna
  */
 public class DefaultTemplateResolver implements TemplateResolver {
     private final List<TemplateResolver> templateResolvers = Lists.newArrayListWithCapacity(4);

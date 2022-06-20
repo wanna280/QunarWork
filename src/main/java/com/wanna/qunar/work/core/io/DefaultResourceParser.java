@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 默认的资源解析器的实现
+ * 默认的资源解析器的实现，组合ClassPath/FilePath两种类型的方式去进行解析
  *
  * @author wanna
  */
@@ -17,8 +17,12 @@ public class DefaultResourceParser implements ResourceParser {
 
     public DefaultResourceParser() {
         parsers.add(new ClassPathResourceParser());
+        parsers.add(new FilePathResourceParser());
     }
 
+    /**
+     * 添加一个自定义的ResourceParser
+     */
     public void addResourceParser(ResourceParser parser) {
         this.parsers.add(parser);
     }

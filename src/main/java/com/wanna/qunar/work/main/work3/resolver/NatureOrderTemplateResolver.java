@@ -8,6 +8,8 @@ import java.util.Map;
 
 /**
  * natureOrder的模板解析器，按照给定的index去进行return即可，"$natureOrder(index)"中的index也就是数组的索引
+ *
+ * @author wanna
  */
 public class NatureOrderTemplateResolver extends AbstractTemplateResolver {
 

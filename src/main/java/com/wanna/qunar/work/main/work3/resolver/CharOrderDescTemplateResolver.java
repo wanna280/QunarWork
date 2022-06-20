@@ -7,6 +7,8 @@ import java.util.Map;
 
 /**
  * charOrderDESC的模板解析器，对所有的Properties去按照字符去进行排序并取反即可
+ *
+ * @author wanna
  */
 public class CharOrderDescTemplateResolver extends AbstractTemplateResolver {
 
