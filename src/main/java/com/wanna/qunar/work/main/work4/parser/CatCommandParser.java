@@ -20,12 +20,10 @@ public class CatCommandParser implements ShellPipeParser {
 
     @Override
     public String[] parse(String[] origin, String[] command) {
-        final String fileContent;
         try {
-            fileContent = ResourceParser.DEFAULT.parseAsString(command[1]);
+            return ResourceParser.DEFAULT.parseAsStringLines(command[1]);
         } catch (IOException ex) {
             throw new IllegalStateException("无法找到给定的文件[" + command[1] + "]");
         }
-        return fileContent.split("\n");
     }
 }
